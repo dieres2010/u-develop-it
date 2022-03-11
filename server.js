@@ -22,7 +22,7 @@ const db = mysql.createConnection(
     console.log('Connected to the election database.')
   );
 
-  /* Get all candidates
+// Get all candidates
 app.get('/api/candidates', (req, res) => {
     const sql = `SELECT * FROM candidates`;
   
@@ -54,7 +54,7 @@ app.get('/api/candidate/:id', (req, res) => {
       });
     });
   });
-*/  
+ 
   // Delete a candidate
   app.delete('/api/candidate/:id', (req, res) => {
     const sql = `DELETE FROM candidates WHERE id = ?`;
